@@ -35,7 +35,9 @@ public:
 
     char show_image(int time=0)
     {
-        imshow("images",image);
+        cv::namedWindow("camera", CV_WINDOW_NORMAL);//CV_WINDOW_NORMAL就是0
+        cv::resizeWindow("camera", 1920, 1080);
+        cv::imshow("camera", image);
         return waitKey(time);
     }
 

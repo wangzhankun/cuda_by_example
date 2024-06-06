@@ -32,7 +32,7 @@ __global__ void kernel( unsigned char *ptr, int ticks ) {
     float fy = y - DIM/2;
     float d = sqrtf( fx * fx + fy * fy );
     unsigned char grey = (unsigned char)(128.0f + 127.0f *
-                                         cos(d/10.0f - ticks/7.0f) /
+                                         cosf(d/10.0f - ticks/7.0f) /
                                          (d/10.0f + 1.0f));    
     ptr[offset*4 + 0] = grey;
     ptr[offset*4 + 1] = grey;

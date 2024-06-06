@@ -21,6 +21,11 @@ target("dot_ch5")
 	add_files("dot.cu")
 target_end()
 
+target("dot_2")
+	set_kind("binary")
+	add_files("dot2.cu")
+target_end()
+
 
 target("add_loop_long_blocks")
 	set_kind("binary")

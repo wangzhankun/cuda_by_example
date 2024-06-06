@@ -16,3 +16,10 @@ target("hist_cpu")
 target_end()
 
 
+
+target("hist_gpu_ch9")
+	set_kind("binary")
+	add_files("hist_gpu_ch9.cu")
+target_end()
+
+

@@ -232,7 +232,7 @@ int main( void ) {
                 data.totalTime/data.frames  );
 
         ticks++;
-        char key = bitmap_image.show_image(30);
+        char key = bitmap_image.show_image(5);
         if(key==27)
         {
             break;

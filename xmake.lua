@@ -50,6 +50,7 @@ includes("chapter03",
         "chapter07",
         "chapter08",
         "chapter05",
+        "chapter11",
         "appendix_a")
 
 
